@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Competitive Coding - MCQ Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Advanced Competitive Coding - MCQ Practice</h1>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" aria-label="Toggle dark mode">
+                    <span class="toggle-icon light-icon">☀️</span>
+                    <span class="toggle-icon dark-icon">🌙</span>
+                </button>
+            </div>
+        </header>
+        
+        <main>
+            <section id="question-selection">
+                <h2>Select Question Bank</h2>
+                <div class="question-count-container">
+                    <div class="count-option">
+                        <input type="radio" id="rapids" name="question-count" value="10" checked>
+                        <label for="rapids">Rapids (10 questions)</label>
+                    </div>
+                    <div class="count-option">
+                        <input type="radio" id="fat-level" name="question-count" value="30">
+                        <label for="fat-level">FAT Level (30 questions)</label>
+                    </div>
+                    <div class="count-option">
+                        <input type="radio" id="bulk" name="question-count" value="50">
+                        <label for="bulk">Bulk (50 questions)</label>
+                    </div>
+                    <div class="count-option">
+                        <input type="radio" id="marathon" name="question-count" value="all">
+                        <label for="marathon">Marathon (All questions)</label>
+                    </div>
+                </div>
+                <button id="start-quiz" class="primary-button">Start Quiz</button>
+            </section>
+
+            <section id="quiz-container" class="hidden">
+                <div id="questions-container">
+                    <!-- Questions will be dynamically generated via JavaScript -->
+                </div>
+                <button id="submit-quiz" class="primary-button">Submit Quiz</button>
+            </section>
+
+            <section id="results-container" class="hidden">
+                <div class="results-header">
+                    <h2>Quiz Results</h2>
+                    <p id="score-display"></p>
+                </div>
+                <div id="detailed-results">
+                    <!-- Detailed results will be dynamically generated via JavaScript -->
+                </div>
+                <button id="retry-quiz" class="primary-button">Try Another Quiz</button>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
